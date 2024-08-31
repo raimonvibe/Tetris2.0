@@ -1,0 +1,152 @@
+* {
+    touch-action: manipulation;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7d1ff, #c9b6e4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #8a4f8a;
+    font-size: 1.5em;
+}
+
+#login-container, #game-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#game-area {
+    width: 240px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#tetris {
+    display: block;
+    border: 2px solid #d4b9ff;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#game-container {
+    width: 90%; /* Reduce from 100% to give some margin */
+    max-width: 500px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#game-area {
+    width: 100%;
+    padding-bottom: 166.67%; /* This maintains a 3:5 aspect ratio (adjust if needed) */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px; /* Add some space below the game area */
+}
+
+#tetris {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#controls {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button, input {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #b19cd9;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    background-color: #f0e6ff;
+    color: #333;
+}
+
+#start-btn {
+    margin-top: 10px;
+}
+
+#score, #high-score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    #game-container {
+        padding: 10px;
+    }
+
+    #game-area {
+        width: 180px;
+        height: 300px;
+    }
+
+    button, input {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    #game-container {
+        width: 95%;
+    }
+    
+    #controls button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
