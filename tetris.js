@@ -306,25 +306,5 @@ document.addEventListener('keydown', event => {
     }
 });
 
-function addControlListeners(buttonId, action) {
-    const button = document.getElementById(buttonId);
-    if (!button) return;
-
-    // Function to handle both touch and click events
-    function handleControlEvent(event) {
-        event.preventDefault();
-        action();
-    }
-
-    button.addEventListener('touchstart', handleControlEvent, { passive: false });
-    button.addEventListener('mousedown', handleControlEvent, { passive: false });
-}
-
-addControlListeners('left-button', moveLeft);
-addControlListeners('right-button', moveRight);
-addControlListeners('down-button', moveDown);
-addControlListeners('rotate-button', rotatePiece);
-
-
 // Initialize the game
 loadHighScore();
