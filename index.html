@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pastel Tetris</h1>
+    </header>
+
+    <main>
+        <div id="login-container">
+            <input type="text" id="username" placeholder="Enter your username" aria-label="Username">
+            <button id="login-btn">Login</button>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <div id="game-info">
+                <div id="score">Score: 0</div>
+                <div id="high-score">High Score: 0</div>
+            </div>
+            <canvas id="tetris" width="240" height="400"></canvas>
+            <div id="game-controls">
+                <button id="left-button">Left</button>
+                <button id="right-button">Right</button>
+                <button id="down-button">Down</button>
+                <button id="rotate-button">Rotate</button>
+            </div>
+            <button id="start-btn">Start Game</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Pastel Tetris. ❤️ All rights reserved.</p>
+    </footer>
+
+    <!-- Audio Files -->
+    <audio id="moveSound" src="move.mp3" preload="auto"></audio>
+    <audio id="rotateSound" src="rotate.mp3" preload="auto"></audio>
+    <audio id="dropSound" src="drop.mp3" preload="auto"></audio>
+    <audio id="clearSound" src="clear.mp3" preload="auto"></audio>
+
+    <!-- Scripts -->
+    <script src="tetris.js"></script>
+    <script src="gameControls.js"></script>
+</body>
+</html>
