@@ -3,7 +3,7 @@
 <img src="screenshot.png" alt="Pastel Tetris Game" width="200"/>
 
 
-[Play Pastel Tetris on GitHub Pages](https://your-github-username.github.io/pastel-tetris)
+[Play Pastel Tetris on GitHub Pages]([(https://raimonvibe.github.io/Tetris2.0/])
 
 ## Description
 Pastel Tetris is a simple and colorful implementation of the classic Tetris game. It features a soothing pastel color scheme and engaging sound effects, providing a fresh take on the timeless puzzle game.
