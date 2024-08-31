@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7d1ff, #c9b6e4);
+    color: #6b4f8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Voorkomt scrollen */
+    height: 100vh; /* Zorgt dat de html en body de volledige hoogte van het venster innemen */
+    margin: 0; /* Verwijdert de standaard marge */
+    padding: 0; /* Verwijdert de standaard padding */
+}
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #8a4f8a;
+    font-size: 1.5em;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#auth-container, #login-container, #game-container {
+    margin-bottom: 20px;
+}
+
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background-color: #f0e6ff;
+}
+
+button {
+    background-color: #b19cd9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9f8ac7;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+canvas {
+    border: 3px solid #d4b9ff;
+    border-radius: 10px;
+}
+
+#score, #high-score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
